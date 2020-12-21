@@ -1,121 +1,145 @@
 :root {
-    --primary: #3066B3;
-    --primary-datk: #2E3963;
-    --primary-light: #6AB2E6;
-    --black: #0B0A09;
-    --white: #fff;
-    --grey: #999;
-    --grey-light: #dcdcdc;
+  --primary: #3066b3;
+  --primary-datk: #2e3963;
+  --primary-light: #6ab2e6;
+  --black: #0b0a09;
+  --white: #fff;
+  --grey: #999;
+  --grey-light: #dcdcdc;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Andika New Basic', sans-serif;
-    font-size: 62.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app{
+  width: 50%;
 }
 
 /* NAVIGATION */
-.navigation{
-    width: 100%;
-    display: flex;
-    background-color: var(--black);
-    justify-content: space-between;
-    align-items: center;
+.navigation {
+  width: 100%;
+  display: flex;
+  background-color: var(--black);
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navigation__logo{
-    font-size: 2rem;
-    margin-left: 2rem;
-    padding: .5rem 0;
+.navigation__logo {
+  font-size: 2rem;
+  margin-left: 2rem;
+  padding: 0.5rem 0;
 }
 
-.navigation__logo a{
-    text-decoration: none;
-    color: var(--white);
+.navigation__logo a {
+  text-decoration: none;
+  color: var(--white);
 }
 
-.navigation__right-side{
-    margin-right: 2rem;
+.navigation__right-side {
+  margin-right: 2rem;
 }
-
-
 
 /* BUTTONS */
 .btn {
-    background-color: var(--black);
-    border: 2px solid transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
-    border-radius: 2px;
-    padding: 5px;
-    transition: all 0.2s;
-  }
-  
-  .btn:hover {
-    background-color: var(--white);
-    color: var(--black);
-    cursor: pointer;
-  }
-  
-  .btn:active {
-    transform: translateY(0);
-  }
-  
-  .btn:focus {
-    outline: none;
-  }
-
-  .btn.secondary:hover{
-    color: var(--black);
-    border: 2px solid var(--black);
+  background-color: var(--black);
+  border: 2px solid transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 2px;
+  padding: 5px;
+  transition: all 0.2s;
 }
 
-  /* FORM */
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
 
-  .book-form{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid var(--grey-light);
-    border-radius: 5px;
-    box-shadow: 0 3px 0 var(--grey-light);
-    margin: 4rem 0;
-    padding: 3rem 3rem;
-  }
+.btn:active {
+  transform: translateY(0);
+}
 
-  .book-form__header{
-    font-size: 30px;
-    margin: 1.5rem 0;
-  }
-  
-  .book-fomr__input-container{
-      display: flex;
-      flex-direction: column;
-  }
+.btn:focus {
+  outline: none;
+}
 
-  .book-form__input{
-    font-size: 24px;
-    margin-bottom: 40px;
-    padding: 5px;
-    border: 2px solid transparent;
-    border-bottom: 2px solid var(--grey-light);
-    transition: all 0.2s;
-  }
+.btn.secondary:hover {
+  color: var(--black);
+  border: 2px solid var(--black);
+}
 
-  .book-form__input:focus {
-    outline: none;
-    border: 2px solid var(--grey);
-    border-radius: 5px;
-  }
+/* FORM */
 
-  .book-form__input:hover {
-    border-bottom: 2px solid var(--grey);
-  }
+.book-form {
+  width: 50%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--grey-light);
+  border-radius: 5px;
+  box-shadow: 0 3px 0 var(--grey-light);
+  margin: 4rem 0;
+  padding: 3rem 3rem;
+}
+
+.book-form__header {
+  font-size: 30px;
+  margin: 1.5rem 0;
+}
+
+.book-fomr__input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-form__input {
+  font-size: 24px;
+  margin-bottom: 40px;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--grey-light);
+  transition: all 0.2s;
+}
+
+.book-form__input:focus {
+  outline: none;
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+}
+
+.book-form__input:hover {
+  border-bottom: 2px solid var(--grey);
+}
+
+/* LIBRARY */
+.library {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  border: 2px solid var(--grey-light);
+  border-radius: 5px;
+  box-shadow: 0 3px 0 var(--grey-light);
+  font-size: 1.4rem;
+  transition: all 0.2s;
+}
+
+.library__reading-status--read{
+  color: green;
+}
+
+.library__reading-status--not-read{
+  color: red;
+}

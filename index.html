@@ -15,10 +15,10 @@
     <nav class="navigation">
       <div class="navigation__logo"><a href="#">Library</a></div>
       <div class="navigation__right-side">
-        <button class="btn">Add Book</button>
+        <button id="addBookButton" class="btn">Add Book</button>
       </div>
     </nav>
-    <form onsubmit="addBookToLibrary(event)" class="book-form">
+    <form id="addBookForm" onsubmit="addBookToLibrary(event)" class="book-form">
       <h2 class="book-form__header">Add a book</h2>
       <div class="book-fomr__input-container">
         <!-- <label for="bookTitleInput" class="book-form__label">Title</label> -->
@@ -51,6 +51,7 @@
       <input type="submit" value="Add book" class="btn secondary">
       </div>
     </form>
+    <div id="app" class="app"></div>
     <script src="/app.js"></script>
   </body>
 </html>
