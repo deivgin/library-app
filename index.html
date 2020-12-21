@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__logo"><a href="#">Library</a></div>
+      <div class="navigation__right-side">
+        <button class="btn">Add Book</button>
+      </div>
+    </nav>
+    <form onsubmit="addBookToLibrary(event)" class="book-form">
+      <h2 class="book-form__header">Add a book</h2>
+      <div class="book-fomr__input-container">
+        <!-- <label for="bookTitleInput" class="book-form__label">Title</label> -->
+      <input
+        id="bookTitleInput"
+        type="text"
+        class="book-form__input"
+        placeholder="Title"
+      />
+
+      <!-- <label for="bookAuthorInput" class="book-form__label">Author</label> -->
+      <input
+        id="bookAuthorInput"
+        type="text"
+        class="book-form__input"
+        placeholder="Author"
+      />
+
+      <!-- <label for="bookPageInput" class="book-form__label">Pages</label> -->
+      <input
+        id="bookPageInput"
+        type="number"
+        class="book-form__input"
+        placeholder="Pages"
+      />
+      <div class="book-form__read-book-container">
+        <label for="bookReadInput" class="book-form__label">Read</label>
+        <input id="bookReadInput" type="checkbox" class="book-form__input" />
+      </div>
+      <input type="submit" value="Add book" class="btn secondary">
+      </div>
+    </form>
+    <script src="/app.js"></script>
+  </body>
+</html>
