@@ -143,3 +143,25 @@ body {
 .library__reading-status--not-read{
   color: red;
 }
+
+.library__delete-button{
+  border: none;
+  background-color: var(--white);
+  transition: all .2s;
+}
+
+.library__delete-button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.library__delete-button:focus{
+  outline: none;
+  background-color: var(--white);
+}
+
+.library__delete-button:active{
+  border: none;
+  background-color: var(--white);
+  transform: scale(1);
+}
