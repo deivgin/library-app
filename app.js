@@ -5,29 +5,7 @@ const addBookButton = document.getElementById("addBookButton");
 
 //variables
 let isFormShown = false;
-let myLibrary = [
-    {
-        id: 1,
-        title: "Book 1",
-        author: "Author 1",
-        pages: 10,
-        read: false
-    },
-    {
-        id: 2,
-        title: "Book 2",
-        author: "Author 2",
-        pages: 20,
-        read: true
-    },
-    {
-        id: 3,
-        title: "Book 3",
-        author: "Author 3",
-        pages: 30,
-        read: false
-    }
-];
+let myLibrary = [];
 
 //Book object constructor
 function Book(title, author, pages, read) {
