@@ -38,6 +38,7 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
+
 //Add book button event listener
 addBookButton.addEventListener("click", ()=>{
     if(!isFormShown){
@@ -158,6 +159,7 @@ function render(){
     }
     
 }
+
 render();
 
 
